@@ -133,7 +133,7 @@ int Start_win32_Syscheck()
     }
 
     /* Print ignores. */
-    if(syscheck.ignore) 
+    if(syscheck.ignore)
 	for (r = 0; syscheck.ignore[r] != NULL; r++)
 	    verbose("%s: INFO: ignoring: '%s'",
 		ARGV0, syscheck.ignore[r]);
@@ -323,7 +323,7 @@ int main(int argc, char **argv)
     }
 
     /* Print ignores. */
-    if(syscheck.ignore) 
+    if(syscheck.ignore)
 	for (r = 0; syscheck.ignore[r] != NULL; r++)
 	    verbose("%s: INFO: ignoring: '%s'",
 		ARGV0, syscheck.ignore[r]);

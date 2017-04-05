@@ -62,6 +62,9 @@ typedef struct _config {
 
     char **ignore_glob; 	    /* glob patterns of files/dirs to ignore */
 
+    char **nodiff;                  /* list of files/dirs to never output diff */
+    OSMatch **nodiff_regex;         /* regex of files/dirs to never output diff */
+
     char **dir;                     /* array of directories to be scanned */
     OSMatch **filerestrict;
 
